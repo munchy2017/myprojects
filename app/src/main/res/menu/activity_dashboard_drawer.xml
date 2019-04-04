@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Search" />
+
+        <item
+            android:id="@+id/events"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Events" />
+        <item
+            android:id="@+id/map"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Shopping Malls" />
+        <item
+            android:id="@+id/comm"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Communities" />
+
+
+    </group>
+   <!-- <item android:title="Classifieds">
+
+        <menu>
+            <item
+                android:id="@+id/abtUs"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About Us" />
+            <item
+                android:id="@+id/support"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Support" />
+
+            <item
+                android:id="@+id/furniture"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+
+
+
+        </menu>
+
+    </item>-->
+
+
+
+</menu>

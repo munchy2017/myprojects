@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prosp.botszone">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <!-->edit-->
+    <!-- Protect the map component of the application using application signature -->
+    <permission
+        android:name="in.wptrafficanalyzer.locationmarkermysql.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <!-- Allows to receive map -->
+    <uses-permission android:name="in.wptrafficanalyzer.locationmarkermysql.permission.MAPS_RECEIVE" />
+
+
+    <!-- Allows the Google Maps Android API V2 to cache map tile data in the device's external storage area -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Allows the Google Maps Android API V2 to use WiFi or mobile cell data (or both) to determine the device's location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Allows the Google Maps Android API V2 to use the Global Positioning System (GPS)
+        to determine the device's location to within a very small area -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Allows to contact Google Serves -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Google Maps Android API V2 requires OpenGL ES version 2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".users.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".users.Login" />
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".categories.all.allstaff" />
+        <activity
+            android:name=".category.Fashion"
+            android:label="Fashion/Clothing" />
+        <activity android:name=".users.Register" />
+        <activity android:name=".categories.all.AdapterFish1" />
+        <activity
+            android:name=".jobs.Jobs"
+            android:label="Jobs/Services" />
+        <activity
+            android:name=".clothes.Clothes"
+            android:label="Fashion" />
+        <activity
+            android:name=".computers.Computers"
+            android:label="Computers/Electronics" />
+        <activity
+            android:name=".estates.Estates"
+            android:label="Real Estates" />
+        <activity
+            android:name=".furniture.Furniture"
+            android:label="Furniture" />
+        <activity
+            android:name=".vehicles.Vehicles"
+            android:label="Vehicles/Automation" />
+        <activity android:name=".location.Location" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDN7RJFmImYAca96elyZlE5s_fhX-MMuhk" />
+
+        <activity android:name=".slider.Slider" />
+        <activity android:name=".manual.Manual" />
+        <activity
+            android:name=".location.Find_Malls"
+            android:label="@string/title_activity_find__malls" />
+        <activity android:name=".maps.Main2Activity" />
+        <activity
+            android:name=".maps.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+    </application>
+
+</manifest>
